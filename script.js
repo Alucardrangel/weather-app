@@ -51,4 +51,5 @@ let getWeather = () => {
     }
 };
 searchBtn.addEventListener("click", getWeather);
+searchBtn.addEventListener("touchstart", getWeather);
 window.addEventListener("load", getWeather);
