@@ -4,6 +4,100 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+p {
+  display: flex; justify-content: center;
+  color: #e5e5e5;
+}
+
+
+#grid-container {
+  text-align: center;
+  align-items: center;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(25px, 1fr)); */
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 20px;
+  align-content: center;
+  margin-left: 5vh;
+  margin-top: 15vh;
+}
+
+.grid-child-1 {
+  background-color: #c0c0c0bb;
+  border-radius: 10px;
+  border: brown 1px solid; 
+  align-content: center;
+  width: 20vh;
+} 
+.grid-child-2 {
+  background-color: #c0c0c0bb;
+  border-radius: 10px;
+  border: brown 1px solid; 
+  align-content: center;
+  width: 20.5vh;
+} 
+.grid-child-3 {
+  background-color: #c0c0c0bb;
+  border-radius: 10px;
+  border: brown 1px solid; 
+  align-content: center;
+  width: 20vh;
+} 
+.grid-child-4 {
+  background-color: #c0c0c0bb;
+  border-radius: 10px;
+  border: brown 1px solid; 
+  align-content: center;
+  width: 20vh;
+} 
+.grid-child-5 {
+  background-color: #c0c0c0bb;
+  border-radius: 10px;
+  border: brown 1px solid; 
+  align-content: center;
+  width: 20vh;
+} 
+.grid-child-6 {
+  background-color: #c0c0c0bb;
+  border-radius: 10px;
+  border: brown 1px solid; 
+  align-content: center;
+  width: 20vh;
+} 
+.grid-child-7 {
+  background-color: #c0c0c0bb;
+  border-radius: 10px;
+  border: brown 1px solid; 
+  align-content: center;
+  width: 20vh;
+} 
+
+
+#weather_desc0{
+  font-size: 10pt;
+}
+#weather_desc1{
+  font-size: 10pt;
+}
+#weather_desc2{
+  font-size: 10pt;
+}
+#weather_desc3{
+  font-size: 10pt;
+}
+#weather_desc4{
+  font-size: 10pt;
+}
+#weather_desc5{
+  font-size: 10pt;
+}
+#weather_desc6{
+  font-size: 10pt;
+}
+
+
+
 :root {
   --white: #ffffff;
   --off-white: #e5e5e5;
@@ -14,8 +108,12 @@
   --shadow: rgba(3, 46, 87, 0.2);
 }
 body {
+  background-image: url("/stratocumulus-from-above-1.jpg");
   height: 100vh;
-  background: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+  background-size: 120%;
+  overflow: hidden;
+  
+
 }
 .wrapper {
   font-size: 16px;
@@ -57,9 +155,11 @@ body {
 }
 .search-container {
   font-size: 1em;
-  display: grid;
-  grid-template-columns: 9fr 3fr;
   gap: 1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
 }
 .search-container input,
 .search-container button {
@@ -73,6 +173,7 @@ body {
   border-bottom: 2px solid var(--transp-white-1);
   color: var(--white);
   font-weight: 300;
+  width: 3in;
 }
 .search-container input::placeholder {
   color: var(--off-white);
@@ -84,13 +185,15 @@ body {
   color: var(--blue-2);
   background-color: var(--white);
   border-radius: 0.3em;
+  height: min-content;
+  width: 85px;
 }
 #result h2 {
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-weight: 600;
-  margin: 1.25em 0;
+  margin: 0;
 }
 .weather,
 .desc {
